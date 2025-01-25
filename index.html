@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Shop</title>
+    <style>
+        /* Reset and Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: white;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #2c2c2c;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            border-bottom: 1px solid #444;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+        }
+        nav ul li a {
+            padding: 8px 16px;
+            border: 2px solid white;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: white;
+            color: black;
+        }
+        .signup {
+            background-color: rgb(177, 195, 212);
+            color: black;
+        }
+        .signup:hover {
+            background-color: black;
+            color: white;
+        }
+
+        /* Main Content */
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .contentleft, .contentright {
+            flex: 1;
+            max-width: 400px;
+            text-align: center;
+        }
+        .contentleft {
+            text-align: left;
+        }
+        .contentleft h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .contentleft p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: white;
+            color: black;
+            border: none;
+            border-radius: 50px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #2c2c2c;
+            color: white;
+            border: 2px solid white;
+        }
+        .contentright img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+                padding: 20px;
+            }
+            .contentleft, .contentright {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Planet Shop</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Buy Now</a></li>
+                <li><a href="#">Sell Now</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#" class="signup">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contentleft">
+            <h2>Mercury</h2>
+            <p>Mercury is the smallest planet in our solar system and the nearest to the Sun. Mercury is only slightly larger than Earth's Moon. It's the fastest planet, zipping around the Sun every 88 Earth days. Mercury is named for the swiftest of the ancient Roman gods.</p>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="contentright">
+            <img src="Mercury_in_true_color.jpg" alt="Mercury Planet Image">
+        </div>
+    </main>
+</body>
+</html>
